@@ -75,7 +75,7 @@ camelCasing约定将除第一个单词之外的每个单词的第一个字符大
 SEUID.(ProjectName)[.<Feature>][.<Subnamespace>]
 ```
 
-其中<kbd>SEUID</kbd>为固定名称，表示项目所属为东南大学工业设计系，<kbd>(ProjectName)</kbd>为当前项目名称，方括号<kbd>[]</kbd>内为可选项。
+其中<kbd>SEUID</kbd>为固定名称，<kbd>(ProjectName)</kbd>为当前项目名称，方括号<kbd>[]</kbd>内为可选项。
 
 :star:要求：
 
