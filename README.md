@@ -533,9 +533,9 @@ Scene Hierarchy及物体层级设计有以下正确示例：
 > -----Environments-----
 > #此处放置环境模型，全局后处理等物体#
 > -----Xxxxx------
-> ``````
+> \``````
 > ```
-> ![](/pic/EmptyGameObjectExample.png)
+> ![图示](./pic/EmptyGameObjectExample.png)
 
 
 ### 3.3 工作流规范
