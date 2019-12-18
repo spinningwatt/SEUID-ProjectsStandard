@@ -250,10 +250,10 @@ SEUID.(ProjectName)[.<Feature>][.<Subnamespace>]
 
 > ```c#
 > void function(int a
-> 			, char b
-> 			, short c
-> 			, object k
-> 			, string y)
+> 	    , char b
+> 	    , short c
+> 	    , object k
+> 	    , string y)
 > {
 >  //参数换行示意
 > }
