@@ -485,7 +485,7 @@ SEUID.(ProjectName)[.<Feature>][.<Subnamespace>]
 > +---08_Src
 > |   +---Scripts
 > |   +---Shaders		# 包括Shader文件和Shadergraph
-> ​```
+> \```
 > ```
 
 
@@ -501,9 +501,8 @@ Scripts文件夹下示例结构如下：
 > +---Enviroment
 > +---Tools
 > +---UI
+> \```
 > ```
-> ```
-
 
 
 ### 3.2 Scene Hierarchy及物体层级规范
