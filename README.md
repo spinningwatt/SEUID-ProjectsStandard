@@ -346,6 +346,8 @@ SEUID.(ProjectName)[.<Feature>][.<Subnamespace>]
 
 :heavy_multiplication_x: 禁止省略花括号<kbd>{}</kbd>，即使if、while、do、for等逻辑块内只有单行语句或为空。  
 
+对空格和括号的要求有以下正确示例：
+
 > ```c#
 > int k = a + b;			//二元操作符前后均需要使用一个空格
 > public string ClipStr(string str, int starIndex, int endIndex)	//形参逗号后跟一个空格
