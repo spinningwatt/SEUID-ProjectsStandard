@@ -66,19 +66,19 @@ camelCasing约定将除第一个单词之外的每个单词的第一个字符大
 
 **[要求]**：
 
-:heavy_check_mark: 所有命名必须有意义。  
-:heavy_check_mark: 除电子文档外，所有项目文件夹、代码文件、资源文件、代码标识符使用英文单词、英文缩写及数字组合命名。  
-:heavy_check_mark: 所有项目文件夹、代码文件命名基于PascalCasing规范。  
-:heavy_check_mark: 所有非源码资源文件命名基于camelCasing规范。  
-:heavy_check_mark: 命名中若需要分割多个单词组或数字，**仅**使用下划线<kbd>_</kbd>。  
-:heavy_check_mark: **电子文档可使用中文命名**，命名格式为<kbd>文件名_YYMMDD_VERSION</kbd>，其中<kbd>YYMMDD</kbd>为6位数日期，<kbd>VERSION</kbd>为两位数版本号，高位补零对齐（用于区分同一文件在同一天内多次修改的副本）。  
+:heavy_check_mark: 务必使用有意义的命名。  
+:heavy_check_mark: 务必在电子文档外，使用英文单词、英文缩写及数字组合命名所有项目文件夹、代码文件、资源文件、代码标识符。  
+:heavy_check_mark: 务必基于PascalCasing规范命名所有项目文件夹、代码文件。  
+:heavy_check_mark: 务必基于camelCasing规范命名所有非源码资源文件。  
+:heavy_check_mark: 务必**仅**使用下划线<kbd>_</kbd>分割多个单词组或数字。  
+:heavy_check_mark: 务必按照<kbd>文件名_YYMMDD_VERSION</kbd>的格式命名电子文档，可使用中文。其中<kbd>YYMMDD</kbd>为6位数日期，<kbd>VERSION</kbd>为两位数版本号，高位补零对齐（用于区分同一文件在同一天内多次修改的副本）。  
 
 **[禁止]**：
 
-:heavy_multiplication_x: 所有项目文件夹、电子文档、代码文件、资源文件、代码标识符的命名**禁止**使用<kbd>aaaa.cs</kbd>，<kbd>111.pptx</kbd>等无意义的元素命名。  
-:heavy_multiplication_x: 所有项目文件夹、电子文档、代码文件、资源文件、代码标识符的命名**禁止**出现空格<kbd> </kbd>。  
-:heavy_multiplication_x: 除电子文档外，所有项目文件夹、代码文件、资源文件、代码标识符**禁止**使用中文字符或拼音命名。  
-:heavy_multiplication_x: 除电子文档外，所有代码文件和资源文件**禁止**使用数字后缀区分文件。  
+:heavy_multiplication_x: 禁止使用<kbd>aaaa.cs</kbd>，<kbd>111.pptx</kbd>等无意义的元素命名项目文件夹、电子文档、代码文件、资源文件、代码标识符。  
+:heavy_multiplication_x: 禁止使用空格<kbd> </kbd>参与命名项目文件夹、电子文档、代码文件、资源文件、代码标识符。  
+:heavy_multiplication_x: 禁止使用中文字符或拼音命名除电子文档外的，所有项目文件夹、代码文件、资源文件、代码标识符。  
+:heavy_multiplication_x: 禁止使用数字后缀区分文件除电子文档外的，所有代码文件和资源文件。  
 
 对通用命名有以下正确示例：
 
@@ -107,13 +107,13 @@ SEUID.(ProjectName)[.<Feature>][.<Subnamespace>]
 
 **[要求]**：
 
-:heavy_check_mark: 所有项目代码**必须**有明确的自定义命名空间。  
-:heavy_check_mark: 命名空间遵从PascalCasing。  
+:heavy_check_mark: 务必给所有项目代码分配明确的自定义命名空间。  
+:heavy_check_mark: 务必遵从PascalCasing规范给命名空间命名。  
 
 **[禁止]**：
 
-:heavy_multiplication_x: 不使用下划线、连字符或任何其他非字母数字的字符。  
-:heavy_multiplication_x: 命名空间下的类名不可和该命名空间重名。  
+:heavy_multiplication_x: 禁止使用下划线、连字符或任何其他非字母数字的字符。  
+:heavy_multiplication_x: 禁止在命名空间下定义与命名空间重名的类。  
 
 命名空间命名有以下正确示例：
 
@@ -128,21 +128,21 @@ SEUID.(ProjectName)[.<Feature>][.<Subnamespace>]
 
 **[要求]**：
 
-:heavy_check_mark: 类、结构体、接口及成员命名遵从PascalCasing规范。  
-:heavy_check_mark: 形参命名遵从camelCasing规范。  
-:heavy_check_mark: 类、结构体的命名请使用**名词性**单词。  
-:heavy_check_mark: 接口命名请务必以大写字母<kbd>I</kbd>作为前缀，并使用**描述性名词**或**形容词**。  
-:heavy_check_mark: 成员方法命名请使用**动词性短语**或**动宾短语**。  
-:heavy_check_mark: 属性名称必须**名词短语**或**形容词**。  
-:heavy_check_mark: 事件名称使用**动词短语**命名。  
-:heavy_check_mark: 属性、字段若为布尔值，请考虑使用<kbd>Is</kbd>、<kbd>Can</kbd>或<kbd>Has</kbd>等表示是否的前缀。  
-:heavy_check_mark: 属性所封装的私有字段请考虑使用下划线<kbd>_</kbd>做前缀，后跟属性名。  
-:heavy_check_mark: 事件命名请考虑使用<kbd>On</kbd>前缀或<kbd>Has-Done</kbd>的形式。  
+:heavy_check_mark: 务必遵从PascalCasing规范命名类、结构体、接口及成员。  
+:heavy_check_mark: 务必遵从camelCasing规范命名形参。  
+:heavy_check_mark: 考虑使用**名词性**单词命名类、结构体。  
+:heavy_check_mark: 务必以大写字母<kbd>I</kbd>作为前缀命名接口，并考虑使用**描述性名词**或**形容词**。  
+:heavy_check_mark: 考虑使用**动词性短语**或**动宾短语**命名成员方法。  
+:heavy_check_mark: 考虑使用**名词短语**或**形容词**命名属性。  
+:heavy_check_mark: 考虑使用**动词短语**命名事件。  
+:heavy_check_mark: 考虑使用<kbd>Is</kbd>、<kbd>Can</kbd>或<kbd>Has</kbd>等表示是否的前缀命名布尔类型的属性、字段。  
+:heavy_check_mark: 考虑使用下划线<kbd>_</kbd>做前缀，后跟属性名的方式命名属性所封装的私有字段。  
+:heavy_check_mark: 考虑使用<kbd>On</kbd>前缀或<kbd>Has-Done</kbd>的形式命名事件。  
 
 **[禁止]**：
 
-:heavy_multiplication_x: 为类名，结构体名添加前缀。  
-:heavy_multiplication_x: 字段名称不可为**动词性**短语。  
+:heavy_multiplication_x: 禁止为类名，结构体名添加前缀。  
+:heavy_multiplication_x: 禁止使用**动词性**短语命名字段。  
 
 命名有以下正确示例：
 
@@ -165,12 +165,12 @@ SEUID.(ProjectName)[.<Feature>][.<Subnamespace>]
 
 **[要求]**：
 
-:heavy_check_mark: 遵从PascalCasing规范   
-:heavy_check_mark: 文件名与脚本中主要类名一致。   
+:heavy_check_mark: 务必遵从PascalCasing规范命名c#代码文件   
+:heavy_check_mark: 务必使用与类名一致的文件名。   
 
 **[禁止]**：
 
-:heavy_multiplication_x: **不可**使用数字前缀或后缀区分源码文件。  
+:heavy_multiplication_x: 禁止使用数字前缀或后缀区分源码文件。  
 
 .cs文件命名有以下正确示例：
 
@@ -187,7 +187,7 @@ SEUID.(ProjectName)[.<Feature>][.<Subnamespace>]
 
 **[要求]**：
 
-:heavy_check_mark: 一个文件夹下应**只包含一种文件**，按照文件类型分类。  
+:heavy_check_mark: 务必保证一个文件夹下**只包含一种文件**，按照文件类型分类。  
 
 项目文件夹命名有以下正确示例：
 
@@ -209,14 +209,14 @@ SEUID.(ProjectName)[.<Feature>][.<Subnamespace>]
 
 **[要求]**：
 
-:heavy_check_mark: 为形成大小类型的包含关系，使用下划线<kbd>_</kbd>做分割。  
-:heavy_check_mark: 文件名中单词顺序应从大类向小类排列。  
-:heavy_check_mark: 同一大类资源的不同文件命名应使用**形容词性**或**状态、动作描述性**的后缀。  
-:heavy_check_mark: 仅在形容词性后缀不足以区分时，添加两位数字作为后缀，并在高位补零对齐。  
+:heavy_check_mark: 务必使用下划线<kbd>_</kbd>做分割，以形成大小类型的包含关系。  
+:heavy_check_mark: 务必保证文件名中单词顺序从大类向小类排列。  
+:heavy_check_mark: 务必使用**形容词性**或**状态、动作描述性**的后缀命名同一大类资源的不同文件。  
+:heavy_check_mark: 考虑在形容词性后缀不足以区分时，添加两位数字作为后缀，并在高位补零对齐。  
 
 **[禁止]**：
 
-:heavy_multiplication_x: **禁止**使用前缀区分同一大类下的不同文件，前缀区分会导致文件排序混乱。  
+:heavy_multiplication_x: 禁止使用前缀区分同一大类下的不同文件，前缀区分会导致文件排序混乱。  
 
 非源码资源命名有以下正确示例：
 
@@ -242,14 +242,14 @@ SEUID.(ProjectName)[.<Feature>][.<Subnamespace>]
 
 **[要求]**：
 
-:heavy_check_mark: 统一使用tab缩进，并在IDE中设置缩进为4个空格。  
-:heavy_check_mark: 所有花括号<kbd>{}</kbd>均**独占一行**。  
-:heavy_check_mark: 单行代码长度限制在100个字符，超长则换行，换行符不可在字符串中。参数过长则换行后逗号置行首，判断式过长则逻辑判断符置行首，以参数对齐或表达式对齐为目标。除此外换行缩进4个空格，第二次换行不缩进，与第一次缩进对齐。  
+:heavy_check_mark: 务必统一使用tab缩进，并在IDE中设置缩进为4个空格。  
+:heavy_check_mark: 务必保证所有花括号<kbd>{}</kbd>均**独占一行**。  
+:heavy_check_mark: 务必保证单行代码长度限制在100个字符，超长则换行。换行符不可在字符串中。参数过长则换行后逗号置行首，判断式过长则逻辑判断符置行首，以参数对齐或表达式对齐为目标。除此外换行缩进4个空格，第二次换行不缩进，与第一次缩进对齐。  
 
 **[禁止]**：
 
-:heavy_multiplication_x: **禁止**使用四个空格代替tab缩进。  
-:heavy_multiplication_x: **禁止**在字符串中换行。  
+:heavy_multiplication_x: 禁止使用四个空格代替tab缩进。  
+:heavy_multiplication_x: 禁止在字符串中换行。  
 
 有以下正确的缩进及换行示例：
 
@@ -279,20 +279,20 @@ SEUID.(ProjectName)[.<Feature>][.<Subnamespace>]
 
 **[要求]**：
 
-:heavy_check_mark: 接口和类定义之间**空两行**。  
-:heavy_check_mark: 枚举和类定义之间**空两行**。  
-:heavy_check_mark: 类和类定义之间**空两行**。  
-:heavy_check_mark: 方法和方法，属性和方法， 字段和方法，字段和属性之间**空一行**。  
-:heavy_check_mark: 方法中变量声明和操作语句之间**空一行**。  
-:heavy_check_mark: 方法中不同逻辑块之间**空一行**。  
-:heavy_check_mark: <kbd>return</kbd>语句与其他语句之间**空一行**。  
-:heavy_check_mark: **注释与被注释语句间不空行**，但与其余所有语句间**空一行**。  
+:heavy_check_mark: 务必保证接口和类定义之间**空两行**。  
+:heavy_check_mark: 务必保证枚举和类定义之间**空两行**。  
+:heavy_check_mark: 务必保证类和类定义之间**空两行**。  
+:heavy_check_mark: 务必保证方法和方法，属性和方法， 字段和方法，字段和属性之间**空一行**。  
+:heavy_check_mark: 务必保证方法中变量声明和操作语句之间**空一行**。  
+:heavy_check_mark: 务必保证方法中不同逻辑块之间**空一行**。  
+:heavy_check_mark: 务必保证<kbd>return</kbd>语句与其他语句之间**空一行**。  
+:heavy_check_mark: 务必保证**注释与被注释语句间不空行**，但与其余所有语句间**空一行**。  
 
 **[禁止]**：
 
-:heavy_multiplication_x:  不可使用任意形式的注释行代替空行分割代码。  
-:heavy_multiplication_x: 代码不可使用空行开头。  
-:heavy_multiplication_x: 代码结尾不允许存在一行以上的空行。  
+:heavy_multiplication_x: 禁止使用任意形式的注释行代替空行分割代码。  
+:heavy_multiplication_x: 禁止使用空行作为代码文件开头。  
+:heavy_multiplication_x: 禁止在代码文件结尾使用空行。  
 
 使用代码空行布局有以下正确示例：
 
@@ -339,12 +339,12 @@ SEUID.(ProjectName)[.<Feature>][.<Subnamespace>]
 
 **[要求]**：
 
-:heavy_check_mark: 除了<kbd>.</kbd>以外，所有二元操作符左右需要使用空格分开。  
-:heavy_check_mark: 多个参数使用逗号分割，逗号后跟一个空格。  
+:heavy_check_mark: 务必保证除了<kbd>.</kbd>以外，所有二元操作符左右需要使用空格分开。  
+:heavy_check_mark: 务必使用逗号分割多个参数，逗号后跟一个空格。  
 
 **[禁止]**：
 
-:heavy_multiplication_x: if、while、do、for等逻辑块内即使只有单行语句或为空，也不可省略花括号<kbd>{}</kbd>。  
+:heavy_multiplication_x: 禁止省略花括号<kbd>{}</kbd>，即使if、while、do、for等逻辑块内只有单行语句或为空。  
 
 > ```c#
 > int k = a + b;			//二元操作符前后均需要使用一个空格
@@ -361,12 +361,12 @@ SEUID.(ProjectName)[.<Feature>][.<Subnamespace>]
 
 **[要求]**：
 
-:heavy_check_mark: 类的定义中按照<kbd>字段->属性->事件->方法</kbd>的顺序进行布局。  
-:heavy_check_mark: 各类成员内部按照<kbd>private->protected->public</kbd>的访问权限顺序排序。  
+:heavy_check_mark: 务必保证类的定义中按照<kbd>字段->属性->事件->方法</kbd>的顺序进行布局。  
+:heavy_check_mark: 务必保证各类成员内部按照<kbd>private->protected->public</kbd>的访问权限排序。  
 
 **[禁止]**：
 
-:heavy_multiplication_x: **禁止**方法在字段前申明。  
+:heavy_multiplication_x: 禁止方法先于字段申明。  
 
 类中布局有以下正确示例：
 
@@ -412,14 +412,14 @@ SEUID.(ProjectName)[.<Feature>][.<Subnamespace>]
 
 **[要求]**：
 
-:heavy_check_mark: 类定义之前使用XML注释描述该类的作用。  
-:heavy_check_mark: 重要的**标志类属性**后跟单行注释说明各个状态含义。  
-:heavy_check_mark: 方法定义之前使用XML注释描述该方法的作用、用法和形参列表，必要时指出参数含义。  
-:heavy_check_mark: 方法中的重要逻辑使用注释详细说明。  
+:heavy_check_mark: 务必保证类定义之前使用XML注释描述该类的作用。  
+:heavy_check_mark: 务必保证重要的**标志类属性**后跟单行注释说明各个状态含义。  
+:heavy_check_mark: 务必保证方法定义之前使用XML注释描述该方法的作用、用法和形参列表，必要时指出参数含义。  
+:heavy_check_mark: 务必对方法中的重要逻辑选择使用单行或多行注释详细说明，若为多行注释，务必保证被注释的方法紧跟在注释行后。  
 
 **[禁止]**：
 
-:heavy_multiplication_x: 使用注释分割代码块，或使用注释排版代码。  
+:heavy_multiplication_x: 禁止使用注释分割代码块，或使用注释排版代码。  
 
 有以下正确的注释示例：
 
@@ -459,12 +459,12 @@ SEUID.(ProjectName)[.<Feature>][.<Subnamespace>]
 
 **[要求]**：
 
-:heavy_check_mark: 新建项目后首先按照示例建立标准目录结构。  
+:heavy_check_mark: 务必保证新建项目后按照示例建立标准目录结构。  
 
 **[禁止]**：
 
-:heavy_multiplication_x: 不要在shader文件上右键创建material，这样材质文件会自动生成在shader文件夹下。  
-:heavy_multiplication_x: 不允许将资源直接放在Assets文件夹下。  
+:heavy_multiplication_x: 禁止在shader文件上右键创建material，这样材质文件会自动生成在shader文件夹下。  
+:heavy_multiplication_x: 禁止将资源直接放在Assets文件夹下。  
 
 目录结构严格按照以下示例建立：
 
@@ -514,14 +514,14 @@ Scripts文件夹下示例结构如下：
 
 **[要求]**：
 
-:heavy_check_mark: Hierarchy中必须使用形如"-----Xxxx-----"的空物体做分割。  
-:heavy_check_mark: 所有对坐标和朝向无要求的GameObject都**必须**将Transform组件设置为原始状态，如挂载体感脚本的物体。  
-:heavy_check_mark: 所有需要添加Components的模型，**必须**新建一个空GameObject父物体作为相关组件挂载点，即所有模型上套一层空GameObject作为逻辑层。  
-:heavy_check_mark: 场景中尽量使用预制体作为运动或逻辑单元，例如，只在开发前期访问Models文件夹，后期只访问Prefabs文件夹。  
+:heavy_check_mark: 务必使用形如"-----Xxxx-----"的空物体分割Hierarchy结构。  
+:heavy_check_mark: 务必将所有对坐标和朝向无要求的GameObject的Transform组件设置为原始状态，如挂载体感脚本的物体。  
+:heavy_check_mark: 务必在需要添加Components的模型上层新建一个空GameObject父物体作为相关组件挂载点，即所有模型上套一层空GameObject作为逻辑层。  
+:heavy_check_mark: 考虑仅使用预制体作为运动或逻辑单元，例如，只在开发前期访问Models文件夹，后期只访问Prefabs文件夹。  
 
 **[禁止]**：
 
-:heavy_multiplication_x: 不允许将组件直接挂载在mesh组件所在的GameObject上。  
+:heavy_multiplication_x: 禁止将组件直接挂载在mesh组件所在的GameObject上。  
 
 Scene Hierarchy及物体层级设计有以下正确示例：
 
@@ -548,13 +548,13 @@ Scene Hierarchy及物体层级设计有以下正确示例：
 
 **[要求]**：
 
-:heavy_check_mark: 导入Unity项目的模型统一使用<kbd>FBX</kbd>格式。  
-:heavy_check_mark: 若模型在Unity中需要转动，移动，请务必在导出模型前在建模软件中**直接将模型中心设置在转轴交点处**或**方便操控移动的质心处**。  
-:heavy_check_mark: 模型使用左手坐标系，尺寸单位选择公制单位米，各轴缩放均归一化到1。  
+:heavy_check_mark: 务必使用<kbd>FBX</kbd>格式将模型导入Unity项目。  
+:heavy_check_mark: 务必在建模软件中**直接将模型中心设置在转轴交点处**或**方便操控移动的质心处**，以方便控制模型在Unity中的转动，移动。  
+:heavy_check_mark: 务必保证模型使用左手坐标系，尺寸单位选择公制单位米，各轴缩放均归一化到1。  
 
 **[禁止]**：
 
-:heavy_multiplication_x: **不允许**为了实现转动，在Unity中使用脚本给出旋转轴的偏移量，旋转中心应在模型导出前设置标准。  
+:heavy_multiplication_x: 禁止为了实现转动，在Unity中使用脚本给出旋转轴的偏移量，旋转中心应在模型导出前设置标准。  
 
 模型标准参数有以下示例：
 
@@ -570,9 +570,9 @@ Scene Hierarchy及物体层级设计有以下正确示例：
 
 **[要求]**：
 
-:heavy_check_mark: 贴图文件格式统一为<kbd>PNG</kbd>、<kbd>TIFF</kbd>、<kbd>HDR</kbd>。  
-:heavy_check_mark: 贴图文件为正方形，且边长为2的整数次幂，依次为128x128、256x256、512x512、1024x1024 \`\`\`。  
-:heavy_check_mark: 材质贴图文件使用统一后缀区分。  
+:heavy_check_mark: 务必保证贴图文件格式统一为<kbd>PNG</kbd>、<kbd>TIFF</kbd>、<kbd>HDR</kbd>。  
+:heavy_check_mark: 务必保证贴图文件为正方形，且边长为2的整数次幂，依次为128x128、256x256、512x512、1024x1024 \`\`\`。  
+:heavy_check_mark: 务必使用统一后缀区分材质贴图文件。  
 
 材质贴图后缀如下表：
 
