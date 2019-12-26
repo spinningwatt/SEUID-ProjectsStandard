@@ -263,9 +263,9 @@ SEUID.(ProjectName)[.<Feature>][.<Subnamespace>]
 >  //参数换行示意
 > }
 > if( (expression01)
-> && (expression02)
-> && (expression03)
-> || (expression04) )
+>  && (expression02)
+>  && (expression03)
+>  || (expression04) )
 > {
 >  //表达式换行示意
 > }
