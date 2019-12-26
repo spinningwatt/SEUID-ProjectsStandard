@@ -555,11 +555,13 @@ Scene Hierarchy及物体层级设计有以下正确示例：
 
 模型标准参数有以下示例：
 
+> ```shell
 > +Y up, +Z forward, +X right （左手坐标系）
 >
 > Metric Unit System （选择公制单位米）
 >
 > Scale: 1:1:1 （三轴缩放值必是1）
+> ```
 
 #### 3.3.2 贴图
 
