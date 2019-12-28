@@ -71,7 +71,7 @@ camelCasing约定将除第一个单词之外的每个单词的第一个字符大
 :heavy_check_mark: 务必基于PascalCasing规范命名所有项目文件夹、代码文件。  
 :heavy_check_mark: 务必基于camelCasing规范命名所有非源码资源文件。  
 :heavy_check_mark: 务必**仅**使用下划线<kbd>_</kbd>分割多个单词组或数字。  
-:heavy_check_mark: 务必按照<kbd>文件名_YYMMDD_VERSION</kbd>的格式命名电子文档，可使用中文。其中<kbd>YYMMDD</kbd>为6位数日期，<kbd>VERSION</kbd>为两位数版本号，高位补零对齐（用于区分同一文件在同一天内多次修改的副本）。  
+:heavy_check_mark: 务必按照<kbd>文件名_YYMMDD</kbd>的格式命名电子文档，可使用中文。其中<kbd>YYMMDD</kbd>为6位数日期。同一文件在同一天内若存有多次修改的副本则务必按照<kbd>文件名_YYMMDD_VERSION</kbd>的格式命名，<kbd>VERSION</kbd>为两位数版本号，高位补零对齐。  
 
 **[禁止]**：
 
